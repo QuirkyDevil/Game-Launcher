@@ -6,8 +6,8 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
-class TicTacToe_GUI extends JFrame {
-    TicTacToe_GUI() {
+public class TicTacToe extends JFrame {
+    public TicTacToe() {
         this.setTitle("TicTacToe");
         this.setDefaultCloseOperation(javax.swing.JFrame.DO_NOTHING_ON_CLOSE);
         this.getContentPane().setBackground(new Color(176, 229, 124));

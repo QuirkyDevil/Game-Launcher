@@ -1,6 +1,5 @@
 package Microproject;
 
-
 import java.awt.*;
 import java.util.*;
 import java.net.MalformedURLException;
@@ -10,8 +9,8 @@ import java.awt.event.*;
 import javax.swing.Timer;
 
 
-class RPS_GUI extends JFrame {
-    RPS_GUI() {
+public class RPS extends JFrame {
+    public RPS() {
         this.setTitle("TicTacToe");
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(javax.swing.JFrame.DO_NOTHING_ON_CLOSE);
@@ -242,11 +241,5 @@ class RPS_Panel extends JPanel{
         }
 
 
-    }
-}
-
-public class RPS {
-    public static void main(String[] args) {
-        new RPS_GUI();
     }
 }

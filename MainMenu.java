@@ -1,6 +1,5 @@
 package Microproject;
 
-
 import java.awt.*;
 import java.util.*;
 import javax.swing.*;
@@ -96,16 +95,16 @@ public class MainMenu extends Frame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == buttons[0]) {
             frame.dispose();
-            new GameFrame();
+            new Snake();
         } else if (e.getSource() == buttons[1]) {
             frame.dispose();
-            new Hangman_GUI();
+            new HangmanAWT();
         } else if (e.getSource() == buttons[2]) {
             frame.dispose();
-            new TicTacToe_GUI();
+            new TicTacToe();
         } else if (e.getSource() == buttons[3]) {
             frame.dispose();
-            new RPS_GUI();
+            new RPS();
         } else if (e.getSource() == buttons[4]) {
             frame.dispose();
         } else if (e.getSource() == buttons[4]) {

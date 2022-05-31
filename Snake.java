@@ -1,7 +1,5 @@
 package Microproject;
 
-
-
 import java.awt.*;
 import java.io.File;
 import javax.swing.*;
@@ -10,8 +8,8 @@ import java.util.Random;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-class GameFrame extends JFrame {
-    GameFrame(){
+public class Snake extends JFrame {
+    public Snake(){
         this.add(new GamePanel());
         this.setTitle("SNAKE GAME");
         this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -29,8 +27,8 @@ class GameFrame extends JFrame {
                         JOptionPane.YES_NO_OPTION
                     );
                 if (result == JOptionPane.YES_OPTION) {
-                    new MainMenu();
                     dispose();
+                    new MainMenu();
                 }
                 else{
                     System.exit(0);
@@ -511,13 +509,5 @@ class GamePanel extends JPanel implements ActionListener {
                     break;
             }
         }
-    }
-}
-
-public class Snake {
-
-    public static void main(String[] args) {
-
-        new GameFrame();
     }
 }
